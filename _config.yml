@@ -38,7 +38,7 @@ plugins:
   - jekyll-feed
 
 # staticman (comments) configuration
-staticman_url: https://anasbasem.herokuapp.com/v2/entry/basemwahba/toto/master/comments
+staticman_url: https://anasbasem.herokuapp.com/v2/entry/basemwahba/zika/master/comments
 
 reCaptcha:
   siteKey: 6Lc_JOAUAAAAAKJbpIVumbpgj1q0I86C-E5KzqBR
