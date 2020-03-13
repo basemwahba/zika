@@ -1,0 +1,65 @@
+
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+
+# blog info
+title: Performance Matters
+description: >- # this means to ignore newlines until "baseurl:"
+  A blog about low-level software and hardware performance.
+baseurl: / # the subpath of your site, e.g. /blog
+url: "https://travisdowns.github.io"
+permalink: /:categories/:year/:month/:day/:title:output_ext
+google_analytics: UA-136594956-1
+
+# me info
+email: &email travis.downs@gmail.com
+author:
+  name: Travis Downs
+  email: *email
+  twitter: trav_downs
+twitter_username: trav_downs
+github_username:  travisdowns
+
+# jekyll-seo-tag
+# wants different format from minima
+twitter:
+  username: trav_downs
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# staticman (comments) configuration
+staticman_url: https://anasbasem.herokuapp.com/v2/entry/basemwahba/toto/master/comments
+
+reCaptcha:
+  siteKey: 6Lc_JOAUAAAAAKJbpIVumbpgj1q0I86C-E5KzqBR
+  secret: WMc592PoF6eC4WJjDCTGyzGIal3H41ha1epdVOmfT6m1X6zdagnsh/yQpJFgsr9IgUraucZay+aDkWQrqTSDnnl0RxIV0XBQu5oamMvJ4PA5mU9P9g7v7H7Ko/uXVG66ujylgBjiMKdy7ImcNKweh7S4X1x9613QW9pZFvrvCMoE84OtB0W/WuAMhOMlrvM/faZHak6I11nVZtbKddaCP7dgUbaF0xmQOtIr91xiLpfA74Dw5nZbmoNQ4rJWqy5QWeR2ZexfmEs3jhS58C3JiAK4Vpv0FgEdPpB6CO4sC9xVJrm1qYLuPyiubfHM0k8Rc81ZfzGLNrowpCAlMRJNqA==
+
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      comments: true
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
