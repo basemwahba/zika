@@ -1,0 +1,21 @@
+---
+slug: عربي
+comments: true
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<link rel="stylesheet" href="assets/main.css"  type="text/css"/>
+
+
+  <body>
+
+  {% if page.comments == true %}
+    {% include comments.html %}
+  {% endif %}
+
+
+  </body>
+
+</html>
